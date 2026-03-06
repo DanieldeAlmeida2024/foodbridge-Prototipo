@@ -137,7 +137,7 @@ export default function Dashboard() {
               <DonationCard
                 key={donation.id}
                 donation={donation}
-                onClaim={() => console.log('Claim:', donation.id)}
+                showClaimModal={true}
                 onView={() => console.log('View:', donation.id)}
               />
             ))}

@@ -14,6 +14,8 @@ import Claims from "./pages/Claims";
 import Pickups from "./pages/Pickups";
 import Volunteers from "./pages/Volunteers";
 import Impact from "./pages/Impact";
+import PublishDonation from "./pages/PublishDonation";
+import RequestDonation from "./pages/RequestDonation";
 
 function Router() {
   return (
@@ -28,6 +30,8 @@ function Router() {
       <Route path={"/pickups"} component={Pickups} />
       <Route path={"/volunteers"} component={Volunteers} />
       <Route path={"/impact"} component={Impact} />
+      <Route path={"/donate"} component={PublishDonation} />
+      <Route path={"/request"} component={RequestDonation} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />

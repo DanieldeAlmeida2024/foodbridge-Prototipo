@@ -97,7 +97,7 @@ export default function Explore() {
                 <DonationCard
                   key={donation.id}
                   donation={donation}
-                  onClaim={() => console.log('Claim:', donation.id)}
+                  showClaimModal={true}
                   onView={() => console.log('View:', donation.id)}
                 />
               ))}
@@ -115,7 +115,7 @@ export default function Explore() {
                 <DonationCard
                   key={donation.id}
                   donation={donation}
-                  onClaim={() => console.log('Claim:', donation.id)}
+                  showClaimModal={true}
                   onView={() => console.log('View:', donation.id)}
                 />
               ))}
