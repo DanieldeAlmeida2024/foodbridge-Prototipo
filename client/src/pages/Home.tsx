@@ -11,12 +11,21 @@ export default function Home() {
       <nav className="fixed top-0 w-full bg-background/80 backdrop-blur border-b border-border z-50">
         <div className="container mx-auto px-4 h-16 flex items-center justify-between">
           <div className="text-2xl font-bold text-primary">🍽️ FoodBridge</div>
-          <Button
-            onClick={() => setLocation('/login')}
-            className="bg-primary hover:bg-primary/90 text-primary-foreground"
-          >
-            Acessar Sistema →
-          </Button>
+          <div className="flex gap-2">
+            <Button
+              onClick={() => setLocation('/login')}
+              className="bg-primary hover:bg-primary/90 text-primary-foreground"
+            >
+              Login
+            </Button>
+            <Button
+              onClick={() => setLocation('/register')}
+              variant="outline"
+              className="border-primary text-primary hover:bg-primary/5"
+            >
+              Cadastro
+            </Button>
+          </div>
         </div>
       </nav>
 
