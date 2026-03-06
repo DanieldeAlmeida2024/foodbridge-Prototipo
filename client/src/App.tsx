@@ -15,6 +15,7 @@ import Pickups from "./pages/Pickups";
 import Volunteers from "./pages/Volunteers";
 import Impact from "./pages/Impact";
 import PublishDonation from "./pages/PublishDonation";
+import PublishDonationPage from "./pages/PublishDonationPage";
 import RequestDonation from "./pages/RequestDonation";
 import Register from "./pages/Register";
 import DocumentUpload from "./pages/DocumentUpload";
@@ -33,6 +34,7 @@ function Router() {
       <Route path={"/volunteers"} component={Volunteers} />
       <Route path={"/impact"} component={Impact} />
       <Route path={"/donate"} component={PublishDonation} />
+      <Route path={"/publish-donation"} component={PublishDonationPage} />
       <Route path={"/request"} component={RequestDonation} />
       <Route path={"/register"} component={Register} />
       <Route path={"/documents"} component={DocumentUpload} />
