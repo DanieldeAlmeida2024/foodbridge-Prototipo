@@ -2,36 +2,32 @@
 
 ## Nossa Promessa
 
-No interesse de promover um ambiente aberto e acolhedor, nós, como colaboradores e mantenedores, nos comprometemos a tornar a participação em nosso projeto e nossa comunidade uma experiência livre de assédio para todos, independentemente de idade, tamanho do corpo, deficiência, etnia, identidade de gênero, nível de experiência, nacionalidade, aparência pessoal, raça, religião ou identidade e orientação sexual.
+No interesse de promover um ambiente aberto e acolhedor, nós, como colaboradores e mantenedores, nos comprometemos a tornar a participação em nosso projeto uma experiência livre de assédio para todos, independentemente de idade, tamanho do corpo, deficiência, etnia, identidade de gênero, nível de experiência, nacionalidade, aparência pessoal, raça, religião ou identidade e orientação sexual.
 
 ## Nossos Padrões
 
-Exemplos de comportamento que contribuem para criar um ambiente positivo incluem:
+Exemplos de comportamento que contribuem para criar um ambiente positivo:
 
 - Usar linguagem acolhedora e inclusiva
-- Ser respeitoso com pontos de vista e experiências diferentes
+- Ser respeitoso com pontos de vista diferentes
 - Aceitar críticas construtivas graciosamente
 - Focar no que é melhor para a comunidade
-- Mostrar empatia com outros membros da comunidade
+- Mostrar empatia com outros membros
 
-Exemplos de comportamento inaceitável incluem:
+Exemplos de comportamento inaceitável:
 
-- Uso de linguagem ou imagens sexualizadas e atenção sexual indesejada
-- Trolling, comentários insultuosos/depreciativos e ataques pessoais ou políticos
+- Uso de linguagem ou imagens sexualizadas
+- Ataques pessoais ou políticos
 - Assédio público ou privado
-- Publicar informações privadas de terceiros, como endereço físico ou eletrônico, sem permissão explícita
-- Outra conduta que possa ser razoavelmente considerada inapropriada em um ambiente profissional
+- Publicar informações privadas de terceiros
+- Outra conduta prejudicial
 
 ## Aplicação
 
-Instâncias de comportamento abusivo, de assédio ou inaceitável podem ser reportadas entrando em contato com a equipe do projeto em hello@foodbridge.org. Todas as reclamações serão revisadas e investigadas e resultarão em uma resposta que é considerada necessária e apropriada às circunstâncias. A equipe do projeto é obrigada a manter a confidencialidade em relação ao relator de um incidente.
+Instâncias de comportamento abusivo podem ser reportadas através de issues ou discussions no GitHub. Todas as reclamações serão revisadas e investigadas.
 
-Mantenedores do projeto que não seguem ou não aplicam o Código de Conduta de boa fé podem enfrentar repercussões temporárias ou permanentes, conforme determinado por outros membros da liderança do projeto.
+Mantenedores que não seguem este código podem enfrentar repercussões.
 
 ## Atribuição
 
-Este Código de Conduta é adaptado do [Contributor Covenant][homepage], versão 1.4, disponível em https://www.contributor-covenant.org/version/1/4/code-of-conduct.html
-
-[homepage]: https://www.contributor-covenant.org
-
-Para respostas a perguntas comuns sobre este código de conduta, veja https://www.contributor-covenant.org/faq
+Este Código de Conduta é adaptado do [Contributor Covenant](https://www.contributor-covenant.org/version/2/0/code_of_conduct.html).

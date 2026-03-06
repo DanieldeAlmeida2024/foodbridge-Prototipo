@@ -1,90 +1,79 @@
 # 🍽️ FoodBridge — Plataforma de Redistribuição de Alimentos
 
-> Uma plataforma open source que conecta doadores de alimentos excedentes com ONGs e instituições sociais, transformando desperdício em refeições para quem precisa.
+> Uma plataforma open source que conecta doadores de alimentos excedentes com organizações sociais, transformando desperdício alimentar em refeições para pessoas em situação de vulnerabilidade.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![GitHub stars](https://img.shields.io/github/stars/foodbridge/foodbridge?style=social)](https://github.com/foodbridge/foodbridge)
-[![GitHub forks](https://img.shields.io/github/forks/foodbridge/foodbridge?style=social)](https://github.com/foodbridge/foodbridge)
 [![Status](https://img.shields.io/badge/Status-Prototype-blue)](https://github.com/foodbridge/foodbridge)
 
 ---
 
-## 🎯 Visão
+## 🎯 Propósito
 
-**Reduzir o desperdício de alimentos e ampliar o impacto social.**
+A FoodBridge é um projeto de código aberto desenvolvido com o objetivo de **reduzir o desperdício de alimentos e ampliar o impacto social**. Não é um projeto comercial ou com fins lucrativos. É uma iniciativa comunitária para conectar de forma eficiente:
 
-A FoodBridge é uma plataforma colaborativa que visa conectar de forma eficiente doadores de alimentos (restaurantes, supermercados, produtores rurais, distribuidoras) com ONGs e instituições sociais que recebem essas doações. Nosso objetivo é:
+- **Doadores** (restaurantes, supermercados, produtores rurais, distribuidoras)
+- **Receptores** (organizações sociais, ONGs, instituições de caridade)
 
-- 🌍 **Reduzir desperdício**: Recuperar alimentos que seriam descartados
-- 👥 **Ampliar impacto**: Transformar desperdício em refeições para pessoas em situação de vulnerabilidade
-- 🤝 **Conectar atores**: Criar um ecossistema colaborativo entre doadores, distribuidores e receptores
-- 📊 **Medir impacto**: Quantificar o impacto social e ambiental em tempo real
+Nosso compromisso é criar uma ferramenta acessível, transparente e focada exclusivamente no bem social.
 
 ---
 
-## 📊 Impacto Esperado
+## 🌍 Problema que Abordamos
 
-Com a FoodBridge operando em larga escala:
+Globalmente, aproximadamente **um terço de toda a comida produzida é desperdiçada**, enquanto milhões de pessoas enfrentam insegurança alimentar. Simultaneamente, muitas organizações sociais têm dificuldade em acessar alimentos nutritivos de forma consistente.
 
-| Métrica | Valor |
-|---------|-------|
-| 🍽️ Refeições geradas | 1.2M+ ao mês |
-| 📦 Alimentos recuperados | 342K+ toneladas |
-| 🤝 ONGs beneficiadas | 820+ instituições |
-| 🌱 CO₂ evitado | 2.1K+ toneladas |
+A FoodBridge busca criar um **elo direto e eficiente** entre essas duas realidades, permitindo que alimentos que seriam descartados cheguem a quem realmente precisa.
 
 ---
 
 ## ✨ Funcionalidades Principais
 
-### Para Doadores (Restaurantes, Supermercados, Produtores)
-- ✅ **Publicar Doações** — Wizard intuitivo de 5 passos
-- 📍 **Localização & Horários** — Especificar local e janela de coleta
-- 📊 **Limite por ONG** — Distribuição equitativa entre instituições
-- 📈 **Métricas de Impacto** — Acompanhar refeições geradas e CO₂ evitado
+### Para Doadores
+- Publicar alimentos disponíveis para doação
+- Especificar quantidade, tipo e condições de coleta
+- Acompanhar o impacto social de suas doações
+- Conectar diretamente com organizações receptoras
 
-### Para ONGs & Instituições Sociais
-- 🔍 **Explorar Doações** — Filtrar por tipo, distância e urgência
-- 📋 **Reivindicar Doações** — Modal interativo com seleção de quantidade
-- 👥 **Gerenciar Voluntários** — Cadastro e atribuição para coletas
-- 📅 **Agendar Coletas** — Timeline com confirmação de pickup
-- 📊 **Solicitar Doações** — Descrever necessidades específicas
+### Para Organizações Sociais
+- Explorar alimentos disponíveis em sua região
+- Reivindicar doações conforme necessidade
+- Descrever demandas específicas de alimentos
+- Agendar coletas com transparência
+- Gerenciar voluntários para operações de pickup
 
 ### Para Administradores
-- 🔐 **Moderação** — Revisar e validar usuários e documentos
-- 📊 **Dashboard Global** — Estatísticas de impacto em tempo real
-- 👤 **Gestão de Usuários** — Aprovar/rejeitar cadastros
-- 🚨 **Denúncias** — Sistema de reporte de fraudes
+- Moderar cadastros e validar documentos
+- Acompanhar métricas de impacto
+- Gerenciar denúncias de fraude
+- Manter a integridade da plataforma
 
 ### Recursos Transversais
-- 🗺️ **Mapa Interativo** — Visualizar doações disponíveis por região
-- 📱 **Responsivo** — Funciona em desktop, tablet e mobile
-- 🔔 **Notificações** — Alertas de novas doações e atualizações
-- 🌐 **Multilíngue** — Suporte para português, espanhol e inglês (roadmap)
+- Mapa interativo para visualizar doações por região
+- Interface responsiva (desktop, tablet, mobile)
+- Sistema de notificações
+- Rastreamento transparente de impacto
 
 ---
 
-## 🏗️ Arquitetura
+## 🏗️ Arquitetura Técnica
 
-### Stack Tecnológico
-
-**Frontend:**
+### Stack Frontend
 - React 19 + TypeScript
-- Vite (build tool)
+- Vite (ferramenta de build)
 - TailwindCSS 4 + shadcn/ui
-- Recharts (visualizações)
+- Recharts (visualizações de dados)
 - Wouter (roteamento)
 
-**Backend (Roadmap):**
+### Stack Backend (Planejado)
 - Node.js + Express
 - PostgreSQL
 - Redis (cache)
-- Socket.io (real-time)
+- Socket.io (atualizações em tempo real)
 
-**Infraestrutura:**
-- Vercel (frontend)
-- Railway/Render (backend)
-- AWS S3 (armazenamento de documentos)
+### Infraestrutura
+- Hospedagem em plataforma open source friendly
+- Armazenamento seguro de documentos
+- Conformidade com LGPD
 
 ### Estrutura de Pastas
 
@@ -92,14 +81,14 @@ Com a FoodBridge operando em larga escala:
 foodbridge/
 ├── client/                    # Frontend React
 │   ├── src/
-│   │   ├── pages/            # Páginas (Login, Dashboard, etc)
+│   │   ├── pages/            # Páginas principais
 │   │   ├── components/       # Componentes reutilizáveis
-│   │   ├── lib/              # Utilitários e dados mock
+│   │   ├── lib/              # Utilitários
 │   │   ├── contexts/         # React contexts
 │   │   ├── hooks/            # Custom hooks
-│   │   └── index.css         # Design System (Tailwind)
+│   │   └── index.css         # Design System
 │   └── public/               # Assets estáticos
-├── server/                    # Backend (placeholder)
+├── server/                    # Backend (em desenvolvimento)
 ├── shared/                    # Tipos compartilhados
 └── docs/                      # Documentação
 ```
@@ -131,10 +120,7 @@ pnpm dev
 ### Build para Produção
 
 ```bash
-# Build
 pnpm build
-
-# Preview
 pnpm preview
 ```
 
@@ -144,27 +130,26 @@ pnpm preview
 
 ### Guias Principais
 
-- **[Proposta de Projeto](./docs/PROPOSAL.md)** — Visão, objetivos e roadmap
-- **[Design System](./docs/DESIGN_SYSTEM.md)** — Paleta de cores, tipografia, componentes
-- **[Fluxos de Usuário](./docs/USER_FLOWS.md)** — Wireframes e jornadas por perfil
-- **[API Documentation](./docs/API.md)** — Endpoints e schemas (roadmap)
-- **[Contribuindo](./CONTRIBUTING.md)** — Guia para contribuidores
+- **[Fluxos de Usuário](./docs/USER_FLOWS.md)** — Jornadas por perfil
+- **[Design System](./docs/DESIGN_SYSTEM.md)** — Paleta, tipografia, componentes
+- **[Arquitetura](./docs/ARCHITECTURE.md)** — Decisões técnicas
+- **[Contribuindo](./CONTRIBUTING.md)** — Como colaborar
 
-### Estrutura de Dados
+### Estrutura de Dados Principais
 
-**Usuários:**
-- Donor (Doador)
-- Producer (Produtor)
-- Distributor (Distribuidor)
-- NGO (Organização Social)
-- Admin (Administrador)
+**Perfis de Usuário:**
+- Doador
+- Produtor
+- Distribuidor
+- Organização Social
+- Administrador
 
-**Entidades Principais:**
-- Donations (Doações)
-- Claims (Reivindicações)
-- Pickups (Coletas)
-- Volunteers (Voluntários)
-- Documents (Documentos de validação)
+**Entidades:**
+- Doações
+- Reivindicações
+- Coletas Agendadas
+- Voluntários
+- Documentos de Validação
 
 ---
 
@@ -174,169 +159,156 @@ pnpm preview
 
 | Cor | Hex | Uso |
 |-----|-----|-----|
-| Primary | `#2D7A4F` | Botões, links, destaques |
+| Primary | `#2D7A4F` | Ações principais, destaques |
 | Secondary | `#E07B39` | Alertas, urgência |
 | Success | `#10B981` | Confirmações |
-| Destructive | `#EF4444` | Erros, rejeições |
+| Destructive | `#EF4444` | Erros |
 | Muted | `#9CA3AF` | Textos secundários |
 
 ### Tipografia
 
-- **Display**: Inter Bold (títulos)
-- **Body**: Inter Regular (corpo)
-- **Mono**: JetBrains Mono (código)
+- **Display**: Inter Bold
+- **Body**: Inter Regular
+- **Mono**: JetBrains Mono
 
 ---
 
 ## 🔐 Segurança & Privacidade
 
-- ✅ Validação de documentos obrigatória
-- 🔒 Autenticação com JWT
-- 🛡️ Rate limiting em endpoints críticos
-- 📋 LGPD compliant (Lei Geral de Proteção de Dados)
-- 🚨 Sistema de denúncias para fraudes
+- Validação obrigatória de documentos
+- Autenticação segura
+- Proteção contra fraudes
+- Conformidade com LGPD (Lei Geral de Proteção de Dados)
+- Dados pessoais protegidos
+- Transparência nas operações
 
 ---
 
-## 📈 Roadmap
+## 📈 Visão de Futuro
 
 ### Fase 1: MVP (Atual)
-- [x] Landing page com proposta
-- [x] Cadastro com validação de documentos
-- [x] Dashboard por perfil
+- [x] Landing page
+- [x] Cadastro com validação
+- [x] Dashboards por perfil
 - [x] Publicar/reivindicar doações
 - [x] Mapa interativo
 - [ ] Notificações por email
 
 ### Fase 2: Core Features
 - [ ] Backend com API REST
-- [ ] Autenticação OAuth
-- [ ] Real-time updates (Socket.io)
-- [ ] Sistema de rating/reviews
-- [ ] Integração com WhatsApp
+- [ ] Autenticação robusta
+- [ ] Atualizações em tempo real
+- [ ] Sistema de avaliações
+- [ ] Integrações com WhatsApp
 
-### Fase 3: Scale
-- [ ] Mobile app (React Native)
+### Fase 3: Expansão
+- [ ] Aplicativo mobile
 - [ ] Suporte multilíngue
-- [ ] Integrações com APIs externas
-- [ ] Dashboard de BI para ONGs
+- [ ] Dashboard de impacto
 - [ ] Programa de gamificação
 
-### Fase 4: Impacto
-- [ ] Expansão para América Latina
-- [ ] Parcerias com governo
-- [ ] Certificações de impacto
-- [ ] Programa de sustentabilidade
+### Fase 4: Impacto em Escala
+- [ ] Expansão regional
+- [ ] Parcerias com instituições públicas
+- [ ] Certificações de impacto social
+- [ ] Sustentabilidade operacional
 
 ---
 
 ## 🤝 Como Contribuir
 
-Adoramos contribuições! Veja [CONTRIBUTING.md](./CONTRIBUTING.md) para:
+Este projeto depende de contribuições voluntárias. Você pode ajudar de várias formas:
 
-- 🐛 Reportar bugs
-- 💡 Sugerir features
-- 📝 Melhorar documentação
-- 🔧 Enviar pull requests
+### Reportar Problemas
+Se encontrar um bug ou tiver uma sugestão, abra uma [issue](https://github.com/foodbridge/foodbridge/issues) descrevendo:
+- O que aconteceu
+- Como reproduzir
+- Resultado esperado
+- Seu ambiente
 
-### Desenvolvimento
+### Contribuir com Código
+Veja [CONTRIBUTING.md](./CONTRIBUTING.md) para:
+- Padrões de código
+- Processo de desenvolvimento
+- Como enviar pull requests
+- Diretrizes de qualidade
 
-```bash
-# Crie uma branch para sua feature
-git checkout -b feature/sua-feature
+### Melhorar Documentação
+Documentação clara é essencial. Você pode:
+- Corrigir erros
+- Melhorar clareza
+- Adicionar exemplos
+- Traduzir para outros idiomas
 
-# Commit com mensagens descritivas
-git commit -m "feat: adiciona nova funcionalidade"
-
-# Push e abra um PR
-git push origin feature/sua-feature
-```
-
-### Código
-
-- Use TypeScript para type safety
-- Siga o padrão de código do projeto
-- Adicione testes para novas features
-- Mantenha o Prettier formatado
+### Divulgar
+Ajude a comunidade conhecendo o projeto:
+- Compartilhe em redes sociais
+- Fale sobre em comunidades relevantes
+- Convide outras pessoas a contribuir
 
 ---
 
-## 📞 Comunidade & Suporte
+## 📋 Princípios do Projeto
 
-- 💬 **Discussões**: [GitHub Discussions](https://github.com/foodbridge/foodbridge/discussions)
-- 🐛 **Issues**: [GitHub Issues](https://github.com/foodbridge/foodbridge/issues)
-- 📧 **Email**: hello@foodbridge.org
-- 🌐 **Website**: [foodbridge.org](https://foodbridge.org)
-- 💼 **LinkedIn**: [@FoodBridge](https://linkedin.com/company/foodbridge)
+1. **Foco Social Puro** — Sem fins lucrativos, sem ganho pessoal
+2. **Transparência Total** — Código aberto, decisões públicas
+3. **Acessibilidade** — Ferramenta gratuita e fácil de usar
+4. **Eficiência** — Reduzir desperdício, maximizar impacto
+5. **Comunidade** — Desenvolvido por e para a comunidade
+6. **Sustentabilidade** — Pensando no longo prazo
 
 ---
 
 ## 📄 Licença
 
-Este projeto é licenciado sob a **MIT License** — veja [LICENSE](./LICENSE) para detalhes.
+Este projeto é licenciado sob a **MIT License**. Veja [LICENSE](./LICENSE) para detalhes.
 
-### Por que MIT?
-
-Escolhemos MIT porque:
-- ✅ Permite uso comercial
-- ✅ Permite modificações
-- ✅ Requer atribuição
-- ✅ Sem responsabilidade
-- ✅ Promove adoção e inovação
+A MIT License foi escolhida porque:
+- Permite uso livre
+- Permite modificações
+- Promove adoção e inovação
+- Mantém a transparência
+- Sem restrições comerciais
 
 ---
 
-## 🌟 Reconhecimentos
+## 📞 Comunidade
 
-- Inspirado em plataformas como Too Good To Go, Olio e Food Rescue
-- Desenvolvido com ❤️ pela comunidade
-- Apoiado por [Parceiros/Organizações]
-
----
-
-## 📊 Estatísticas do Projeto
-
-- 📝 **Linhas de Código**: ~15K
-- 🧪 **Cobertura de Testes**: 45% (roadmap: 80%)
-- 📦 **Dependências**: 42 (core)
-- 🔄 **Última Atualização**: 2026-03-06
-- 👥 **Contribuidores**: 1+ (você pode ser o próximo!)
+- **GitHub Issues** — Reporte bugs e sugira features
+- **GitHub Discussions** — Converse com a comunidade
+- **Documentação** — Leia os guias disponíveis
 
 ---
 
-## 🎓 Aprenda Mais
+## 🌟 Agradecimentos
 
-### Artigos & Recursos
+Este projeto é inspirado em iniciativas globais de redução de desperdício alimentar e foi desenvolvido com o compromisso de servir exclusivamente ao bem social.
 
-- [Desperdício de Alimentos no Brasil](https://www.embrapa.br)
-- [ODS 12 - Consumo e Produção Sustentáveis](https://www.un.org/sustainabledevelopment/sustainable-consumption-production/)
-- [Economia Circular](https://www.ellenmacarthurfoundation.org/)
-
-### Eventos & Webinars
-
-- 📅 Webinar: "Tecnologia para Impacto Social" (próximo mês)
-- 🎤 Palestra: "FoodBridge: Conectando Doadores e ONGs" (em breve)
+Agradecemos a todos que acreditam que é possível conectar doadores e receptores de forma eficiente, reduzindo desperdício e salvando vidas.
 
 ---
 
-## 💡 Visão de Futuro
+## 📊 Métricas de Impacto
 
-Imaginamos um mundo onde:
+O sucesso da FoodBridge será medido por:
 
-> **Nenhum alimento é desperdiçado. Ninguém passa fome.**
-
-A FoodBridge é o primeiro passo para conectar eficientemente os atores dessa cadeia. Com sua ajuda, podemos escalar esse impacto para cidades, estados e países.
+- Quantidade de alimentos recuperados
+- Número de pessoas beneficiadas
+- Organizações sociais ativas
+- Redução de desperdício
+- Engajamento comunitário
 
 ---
 
-## 📮 Fale Conosco
+## ⚖️ Responsabilidade Social
 
-Tem uma ideia? Quer colaborar? Encontrou um bug?
+A FoodBridge é um projeto de responsabilidade social. Nosso compromisso é:
 
-**Abra uma issue ou entre em contato:**
-- 📧 Email: hello@foodbridge.org
-- 💬 Discord: [Comunidade FoodBridge](https://discord.gg/foodbridge)
-- 🐦 Twitter: [@FoodBridgeOrg](https://twitter.com/foodbridgeorg)
+- Manter a plataforma acessível e gratuita
+- Proteger dados pessoais
+- Combater fraudes
+- Garantir transparência
+- Servir exclusivamente ao bem social
 
 ---
 
@@ -344,6 +316,6 @@ Tem uma ideia? Quer colaborar? Encontrou um bug?
 
 **Feito com ❤️ para reduzir desperdício e ampliar impacto social**
 
-[⭐ Star no GitHub](https://github.com/foodbridge/foodbridge) · [🔗 Website](https://foodbridge.org) · [📧 Newsletter](https://foodbridge.org/newsletter)
+[⭐ Star no GitHub](https://github.com/foodbridge/foodbridge) · [📖 Documentação](./docs)
 
 </div>

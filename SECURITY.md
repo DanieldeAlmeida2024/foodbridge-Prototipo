@@ -2,9 +2,7 @@
 
 ## Reportando Vulnerabilidades
 
-Se você descobrir uma vulnerabilidade de segurança, **não abra uma issue pública**. Em vez disso, envie um email para:
-
-📧 **security@foodbridge.org**
+Se você descobrir uma vulnerabilidade de segurança, **não abra uma issue pública**. Em vez disso, reporte através de um canal privado no GitHub ou entre em contato através de discussions.
 
 Por favor, inclua:
 - Descrição da vulnerabilidade
@@ -12,35 +10,35 @@ Por favor, inclua:
 - Possível impacto
 - Sugestões de correção (se houver)
 
-Responderemos em até 48 horas e trabalharemos com você para resolver o problema responsavelmente.
+Responderemos assim que possível e trabalharemos para resolver o problema responsavelmente.
 
 ---
 
 ## Medidas de Segurança
 
 ### Autenticação & Autorização
-- ✅ JWT para autenticação stateless
-- ✅ Senhas com hash bcrypt
-- ✅ RBAC (Role-Based Access Control)
-- ✅ Rate limiting em endpoints críticos
+- JWT para autenticação
+- Senhas com hash seguro
+- RBAC (Role-Based Access Control)
+- Rate limiting em endpoints críticos
 
 ### Dados Sensíveis
-- ✅ Documentos armazenados em AWS S3 com criptografia
-- ✅ Variáveis de ambiente para secrets
-- ✅ Sem dados sensíveis em logs
-- ✅ HTTPS obrigatório
+- Documentos armazenados com criptografia
+- Variáveis de ambiente para secrets
+- Sem dados sensíveis em logs
+- HTTPS obrigatório
 
 ### Validação & Sanitização
-- ✅ Validação de entrada em todos os endpoints
-- ✅ Sanitização de dados do usuário
-- ✅ CSRF protection
-- ✅ XSS prevention
+- Validação de entrada em todos os endpoints
+- Sanitização de dados do usuário
+- Proteção contra CSRF
+- Prevenção de XSS
 
 ### Conformidade
-- ✅ LGPD compliant (Lei Geral de Proteção de Dados)
-- ✅ GDPR ready (para expansão europeia)
-- ✅ Política de privacidade clara
-- ✅ Direito ao esquecimento implementado
+- LGPD compliant (Lei Geral de Proteção de Dados)
+- Política de privacidade clara
+- Direito ao esquecimento implementado
+- Transparência nas operações
 
 ---
 
@@ -48,15 +46,15 @@ Responderemos em até 48 horas e trabalharemos com você para resolver o problem
 
 ### Ao Contribuir
 
-1. **Não commite secrets** — Use `.env.local` para variáveis sensíveis
-2. **Valide inputs** — Sempre valide dados do usuário
-3. **Use HTTPS** — Nunca use HTTP em produção
-4. **Sanitize outputs** — Escape HTML/SQL quando necessário
+1. **Não commite secrets** — Use `.env.local`
+2. **Valide inputs** — Sempre valide dados
+3. **Use HTTPS** — Nunca HTTP em produção
+4. **Sanitize outputs** — Escape HTML/SQL
 5. **Teste segurança** — Considere casos de abuso
 
 ### Dependências
 
-- Mantenha dependências atualizadas: `pnpm update`
+- Mantenha dependências atualizadas
 - Verifique vulnerabilidades: `pnpm audit`
 - Revise changelogs de dependências críticas
 
@@ -72,7 +70,7 @@ Responderemos em até 48 horas e trabalharemos com você para resolver o problem
 **Use:**
 - `.env.local` (local)
 - Variáveis de ambiente (produção)
-- Secret managers (AWS Secrets Manager, etc)
+- Secret managers
 
 ---
 
@@ -81,19 +79,19 @@ Responderemos em até 48 horas e trabalharemos com você para resolver o problem
 ### Processo
 
 1. **Confirmação** — Verificamos a vulnerabilidade
-2. **Avaliação** — Determinamos severidade e impacto
-3. **Correção** — Desenvolvemos e testamos patch
+2. **Avaliação** — Determinamos severidade
+3. **Correção** — Desenvolvemos patch
 4. **Release** — Publicamos correção
-5. **Divulgação** — Informamos usuários
+5. **Divulgação** — Informamos comunidade
 
 ### Severidade
 
-| Nível | Descrição | Exemplo |
-|-------|-----------|---------|
-| Crítica | Exploração fácil, impacto alto | RCE, SQL injection |
-| Alta | Exploração possível, impacto significativo | XSS, CSRF |
-| Média | Exploração difícil, impacto moderado | Information disclosure |
-| Baixa | Exploração muito difícil, impacto baixo | Typos, UI issues |
+| Nível | Descrição |
+|-------|-----------|
+| Crítica | Exploração fácil, impacto alto |
+| Alta | Exploração possível, impacto significativo |
+| Média | Exploração difícil, impacto moderado |
+| Baixa | Exploração muito difícil, impacto baixo |
 
 ---
 
@@ -115,17 +113,9 @@ Antes de cada release:
 ## Recursos
 
 - [OWASP Top 10](https://owasp.org/www-project-top-ten/)
-- [Node.js Security Best Practices](https://nodejs.org/en/docs/guides/security/)
+- [Node.js Security](https://nodejs.org/en/docs/guides/security/)
 - [React Security](https://react.dev/learn/security)
 - [LGPD](https://www.gov.br/cidadania/pt-br/acesso-a-informacao/lgpd)
-
----
-
-## Contato
-
-- 📧 Email: security@foodbridge.org
-- 🐦 Twitter: [@FoodBridgeOrg](https://twitter.com/foodbridgeorg)
-- 💬 Discord: [FoodBridge Community](https://discord.gg/foodbridge)
 
 ---
 

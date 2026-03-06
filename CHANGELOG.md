@@ -8,118 +8,108 @@ e este projeto segue [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ## [Unreleased]
 
 ### Planejado
-- Backend com API REST (Node.js + Express)
-- Autenticação OAuth com Google e GitHub
-- Real-time updates com Socket.io
-- Sistema de notificações por email
-- Integração com WhatsApp
-- Mobile app (React Native)
-- Suporte multilíngue (ES, EN)
-- Dashboard de BI para ONGs
+- Backend com API REST
+- Autenticação robusta
+- Real-time updates
+- Sistema de notificações
+- Integrações com canais de comunicação
+- Aplicativo mobile
+- Suporte multilíngue
+- Dashboard de impacto
 
 ---
 
-## [0.1.0] — 2026-03-06
+## [0.1.0] — Protótipo Inicial
 
 ### Adicionado
 
 #### Frontend
-- ✅ Landing page com proposta de valor
-- ✅ Sistema de login com seleção de perfil
-- ✅ Cadastro com 4 passos (tipo → dados pessoais → dados org → sucesso)
-- ✅ Envio de documentos com upload e preview
-- ✅ Dashboards diferenciados por perfil (Donor, Producer, Distributor, NGO, Admin)
-- ✅ Publicar doação com wizard de 5 passos
-- ✅ Modal de reivindicação com 4 etapas
-- ✅ Solicitar doação (ONG) com formulário de necessidade
-- ✅ Exploração de doações com filtros
-- ✅ Mapa interativo com pins de doações
-- ✅ Gestão de coletas agendadas
-- ✅ Gestão de voluntários
-- ✅ Métricas de impacto com gráficos (Recharts)
-- ✅ Design System completo (cores, tipografia, componentes)
-- ✅ Responsividade (mobile, tablet, desktop)
+- Landing page com proposta de valor
+- Sistema de login com seleção de perfil
+- Cadastro com validação de documentos
+- Envio de documentos com upload e preview
+- Dashboards diferenciados por perfil
+- Publicar doação com wizard de passos
+- Modal de reivindicação interativo
+- Solicitar doação com formulário de necessidade
+- Exploração de doações com filtros
+- Mapa interativo
+- Gestão de coletas agendadas
+- Gestão de voluntários
+- Métricas de impacto com visualizações
+- Design System completo
+- Responsividade (mobile, tablet, desktop)
 
 #### Documentação
-- ✅ README.md com visão geral do projeto
-- ✅ CONTRIBUTING.md com guia para contribuidores
-- ✅ CODE_OF_CONDUCT.md
-- ✅ LICENSE (MIT)
-- ✅ CHANGELOG.md
+- README.md
+- CONTRIBUTING.md
+- CODE_OF_CONDUCT.md
+- LICENSE (MIT)
+- SECURITY.md
+- CHANGELOG.md
 
-#### Dados
-- ✅ Mock data com usuários, doações, ONGs, voluntários
-- ✅ Estrutura de dados realista
-
-### Tecnologia
+#### Tecnologia
 - React 19 + TypeScript
-- Vite (build tool)
+- Vite
 - TailwindCSS 4
-- shadcn/ui (componentes)
-- Recharts (visualizações)
-- Wouter (roteamento)
+- shadcn/ui
+- Recharts
+- Wouter
 
 ---
 
 ## Roadmap
 
-### Fase 2: Core Features (Q2 2026)
+### Fase 2: Core Features
 - [ ] Backend com API REST
-- [ ] Autenticação OAuth
+- [ ] Autenticação segura
 - [ ] Real-time updates
-- [ ] Sistema de rating/reviews
-- [ ] Integração WhatsApp
+- [ ] Sistema de avaliações
+- [ ] Integrações de comunicação
 
-### Fase 3: Scale (Q3 2026)
-- [ ] Mobile app (React Native)
-- [ ] Multilíngue (ES, EN)
-- [ ] Integrações externas
-- [ ] Dashboard BI
+### Fase 3: Expansão
+- [ ] Aplicativo mobile
+- [ ] Multilíngue
+- [ ] Dashboard de impacto
 - [ ] Gamificação
 
-### Fase 4: Impacto (Q4 2026)
-- [ ] Expansão LATAM
-- [ ] Parcerias governo
-- [ ] Certificações
-- [ ] Sustentabilidade
+### Fase 4: Impacto em Escala
+- [ ] Expansão regional
+- [ ] Parcerias institucionais
+- [ ] Certificações de impacto
+- [ ] Sustentabilidade operacional
 
 ---
 
-## Notas de Versão
+## Notas
 
-### v0.1.0 — MVP Prototype
+### v0.1.0 — Protótipo Funcional
 
-**Status:** Protótipo funcional com dados fictícios
+**Status:** Protótipo com dados de exemplo
 
-**O que está pronto:**
-- Fluxo completo de cadastro e validação
-- Publicação e reivindicação de doações
-- Dashboards por perfil
-- Mapa interativo
-- Métricas de impacto
+**Pronto para:**
+- Demonstração de conceito
+- Feedback da comunidade
+- Validação de fluxos
+- Testes de usabilidade
 
-**O que está em desenvolvimento:**
+**Em desenvolvimento:**
 - Backend com persistência
 - Autenticação real
 - Notificações
 - Integrações
 
 **Como testar:**
-1. Acesse https://foodbridge.manus.space
-2. Clique em "Cadastro" ou "Login"
-3. Use qualquer email/senha para acessar
-4. Explore os diferentes perfis
+1. Clone o repositório
+2. Instale dependências: `pnpm install`
+3. Inicie o servidor: `pnpm dev`
+4. Acesse http://localhost:3000
+5. Use qualquer email/senha para acessar
 
-**Feedback & Issues:**
-- 🐛 Reporte bugs em [GitHub Issues](https://github.com/foodbridge/foodbridge/issues)
-- 💡 Sugira features em [GitHub Discussions](https://github.com/foodbridge/foodbridge/discussions)
-- 📧 Email: hello@foodbridge.org
-
----
-
-## Contribuidores
-
-- 👤 [Seu Nome] — Criador & Maintainer
+**Feedback:**
+- Abra issues para bugs
+- Use discussions para sugestões
+- Contribua com melhorias
 
 ---
 
@@ -132,7 +122,5 @@ Este projeto é licenciado sob a MIT License — veja [LICENSE](./LICENSE) para 
 <div align="center">
 
 **Feito com ❤️ para reduzir desperdício e ampliar impacto social**
-
-[⭐ Star no GitHub](https://github.com/foodbridge/foodbridge) · [🔗 Website](https://foodbridge.org)
 
 </div>
