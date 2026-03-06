@@ -1,0 +1,136 @@
+import { useState } from "react";
+import { ChevronRight, Leaf, Truck, Users, Trophy } from "lucide-react";
+
+export function ProducerFlowDiagram() {
+  const [activeStep, setActiveStep] = useState(0);
+
+  const steps = [
+    {
+      title: "Publicar Lote de Produção",
+      description: "Registre sua colheita ou excedente",
+      icon: Leaf,
+      details: [
+        "Tipo de cultivo",
+        "Tipo de colheita (regular, excedente, etc)",
+        "Quantidade em toneladas/kg",
+        "Qualidade do produto",
+      ],
+      color: "from-emerald-500 to-emerald-600",
+    },
+    {
+      title: "Definir Certificações",
+      description: "Indique se tem certificações",
+      icon: Trophy,
+      details: [
+        "Orgânico (opcional)",
+        "Agroecológico (opcional)",
+        "Outras certificações",
+        "Documentação disponível",
+      ],
+      color: "from-amber-500 to-amber-600",
+    },
+    {
+      title: "Agendar Coleta",
+      description: "Defina data, hora e local",
+      icon: Truck,
+      details: [
+        "Local da propriedade",
+        "Data de coleta",
+        "Horário disponível",
+        "Instruções de acesso",
+      ],
+      color: "from-blue-500 to-blue-600",
+    },
+    {
+      title: "ONGs Coletam",
+      description: "Voluntários buscam o lote",
+      icon: Users,
+      details: [
+        "Voluntários confirmam coleta",
+        "Foto de comprovação",
+        "Quantidade coletada",
+        "Impacto registrado",
+      ],
+      color: "from-purple-500 to-purple-600",
+    },
+  ];
+
+  return (
+    <div className="w-full">
+      {/* Timeline */}
+      <div className="mb-8">
+        <div className="flex items-center gap-2 mb-6 overflow-x-auto pb-2">
+          {steps.map((step, idx) => (
+            <div key={idx} className="flex items-center gap-2 flex-shrink-0">
+              <button
+                onClick={() => setActiveStep(idx)}
+                className={`flex items-center justify-center w-10 h-10 rounded-full font-bold text-sm transition-all ${
+                  activeStep === idx
+                    ? "bg-primary text-white scale-110"
+                    : "bg-muted text-muted-foreground hover:bg-primary/20"
+                }`}
+              >
+                {idx + 1}
+              </button>
+              {idx < steps.length - 1 && (
+                <div className="w-6 h-0.5 bg-muted hidden sm:block" />
+              )}
+            </div>
+          ))}
+        </div>
+
+        {/* Active Step Details */}
+        <div className="bg-card border border-border rounded-lg p-6 sm:p-8">
+          <div className="flex items-start gap-4 mb-6">
+            <div
+              className={`flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-lg bg-gradient-to-br ${steps[activeStep].color}`}
+            >
+              {steps[activeStep].icon && (() => {
+                const IconComponent = steps[activeStep].icon;
+                return <IconComponent className="w-6 h-6 sm:w-7 sm:h-7 text-white" />;
+              })()}
+            </div>
+            <div className="flex-1">
+              <h3 className="text-xl sm:text-2xl font-bold text-foreground">
+                {steps[activeStep].title}
+              </h3>
+              <p className="text-sm sm:text-base text-muted-foreground">
+                {steps[activeStep].description}
+              </p>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {steps[activeStep].details.map((detail, idx) => (
+              <div key={idx} className="flex items-center gap-3 p-3 bg-muted rounded-lg">
+                <div className="w-2 h-2 rounded-full bg-primary flex-shrink-0" />
+                <span className="text-sm text-foreground">{detail}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Navigation */}
+      <div className="flex gap-3 justify-between">
+        <button
+          onClick={() => setActiveStep(Math.max(0, activeStep - 1))}
+          disabled={activeStep === 0}
+          className="px-4 py-2 rounded-lg border border-border text-foreground hover:bg-muted disabled:opacity-50 disabled:cursor-not-allowed transition-colors text-sm sm:text-base"
+        >
+          Anterior
+        </button>
+        <div className="text-sm text-muted-foreground flex items-center">
+          Passo {activeStep + 1} de {steps.length}
+        </div>
+        <button
+          onClick={() => setActiveStep(Math.min(steps.length - 1, activeStep + 1))}
+          disabled={activeStep === steps.length - 1}
+          className="px-4 py-2 rounded-lg bg-primary text-white hover:bg-primary/90 disabled:opacity-50 disabled:cursor-not-allowed transition-colors flex items-center gap-2 text-sm sm:text-base"
+        >
+          Próximo <ChevronRight className="w-4 h-4" />
+        </button>
+      </div>
+    </div>
+  );
+}

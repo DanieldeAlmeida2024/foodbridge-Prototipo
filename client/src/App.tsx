@@ -19,6 +19,7 @@ import PublishDonationPage from "./pages/PublishDonationPage";
 import RequestDonation from "./pages/RequestDonation";
 import Register from "./pages/Register";
 import DocumentUpload from "./pages/DocumentUpload";
+import FlowDiagrams from "./pages/FlowDiagrams";
 
 function Router() {
   return (
@@ -38,6 +39,7 @@ function Router() {
       <Route path={"/request"} component={RequestDonation} />
       <Route path={"/register"} component={Register} />
       <Route path={"/documents"} component={DocumentUpload} />
+      <Route path={"/flow-diagrams"} component={FlowDiagrams} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
