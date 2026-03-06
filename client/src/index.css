@@ -1,6 +1,8 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -43,39 +45,53 @@
 }
 
 :root {
-  --primary: var(--color-blue-700);
-  --primary-foreground: var(--color-blue-50);
-  --sidebar-primary: var(--color-blue-600);
-  --sidebar-primary-foreground: var(--color-blue-50);
-  --chart-1: var(--color-blue-300);
-  --chart-2: var(--color-blue-500);
-  --chart-3: var(--color-blue-600);
-  --chart-4: var(--color-blue-700);
-  --chart-5: var(--color-blue-800);
+  /* FoodBridge Brand Colors */
+  --primary: #2D7A4F;           /* Verde FoodBridge */
+  --primary-foreground: #F2FAF5;
+  --sidebar-primary: #2D7A4F;
+  --sidebar-primary-foreground: #FFFFFF;
+  
+  /* Secondary - Orange for urgency */
+  --secondary: #E07B39;         /* Laranja Colheita */
+  --secondary-foreground: #FFFFFF;
+  
+  /* Accent colors */
+  --accent: #3A9B63;            /* Verde Médio */
+  --accent-foreground: #FFFFFF;
+  
+  /* Status colors */
+  --destructive: #C0392B;       /* Vermelho */
+  --destructive-foreground: #FFFFFF;
+  
+  /* Neutral palette */
+  --background: #FFFFFF;
+  --foreground: #1A1A1A;
+  --card: #FFFFFF;
+  --card-foreground: #1A1A1A;
+  --popover: #FFFFFF;
+  --popover-foreground: #1A1A1A;
+  --muted: #F5F5F5;
+  --muted-foreground: #9E9E9E;
+  --border: #E5E5E5;
+  --input: #F5F5F5;
+  --ring: #2D7A4F;
+  
+  /* Sidebar */
+  --sidebar: #FFFFFF;
+  --sidebar-foreground: #1A1A1A;
+  --sidebar-accent: #E8F5EE;
+  --sidebar-accent-foreground: #2D7A4F;
+  --sidebar-border: #E5E5E5;
+  --sidebar-ring: #2D7A4F;
+  
+  /* Chart colors */
+  --chart-1: #2D7A4F;
+  --chart-2: #3A9B63;
+  --chart-3: #E07B39;
+  --chart-4: #D4A017;
+  --chart-5: #1B7A3E;
+  
   --radius: 0.65rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.235 0.015 65);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.235 0.015 65);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.235 0.015 65);
-  --secondary: oklch(0.98 0.001 286.375);
-  --secondary-foreground: oklch(0.4 0.015 65);
-  --muted: oklch(0.967 0.001 286.375);
-  --muted-foreground: oklch(0.552 0.016 285.938);
-  --accent: oklch(0.967 0.001 286.375);
-  --accent-foreground: oklch(0.141 0.005 285.823);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(0.92 0.004 286.32);
-  --input: oklch(0.92 0.004 286.32);
-  --ring: oklch(0.623 0.214 259.815);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.235 0.015 65);
-  --sidebar-accent: oklch(0.967 0.001 286.375);
-  --sidebar-accent-foreground: oklch(0.141 0.005 285.823);
-  --sidebar-border: oklch(0.92 0.004 286.32);
-  --sidebar-ring: oklch(0.623 0.214 259.815);
 }
 
 .dark {
