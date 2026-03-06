@@ -1,6 +1,6 @@
-import { useLocation } from 'wouter';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Leaf, Users, TrendingUp, MapPin, Zap, Shield } from 'lucide-react';
+import { ArrowRight, Leaf, Users, TrendingUp, MapPin, Zap, Shield, Workflow } from 'lucide-react';
+import { useLocation } from 'wouter';
 
 export default function Home() {
   const [, setLocation] = useLocation();
@@ -11,7 +11,16 @@ export default function Home() {
       <nav className="fixed top-0 w-full bg-background/80 backdrop-blur border-b border-border z-50">
         <div className="container mx-auto px-4 h-16 flex items-center justify-between">
           <div className="text-2xl font-bold text-primary">🍽️ FoodBridge</div>
-          <div className="flex gap-2">
+          <div className="flex gap-2 items-center">
+            <Button
+              onClick={() => setLocation('/flow-diagrams')}
+              variant="ghost"
+              className="text-muted-foreground hover:text-foreground flex items-center gap-1"
+              title="Ver fluxos de operação"
+            >
+              <Workflow size={18} />
+              <span className="hidden sm:inline">Fluxos</span>
+            </Button>
             <Button
               onClick={() => setLocation('/login')}
               className="bg-primary hover:bg-primary/90 text-primary-foreground"
@@ -228,12 +237,22 @@ export default function Home() {
           <p className="text-xl text-muted-foreground mb-8">
             Explore o protótipo interativo e veja como FoodBridge funciona na prática
           </p>
-          <Button
-            onClick={() => setLocation('/login')}
-            className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8 py-6"
-          >
-            Acessar Protótipo <ArrowRight className="ml-2" size={20} />
-          </Button>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button
+              onClick={() => setLocation('/login')}
+              className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8 py-6"
+            >
+              Acessar Protótipo <ArrowRight className="ml-2" size={20} />
+            </Button>
+            <Button
+              onClick={() => setLocation('/flow-diagrams')}
+              variant="outline"
+              className="border-primary text-primary hover:bg-primary/5 text-lg px-8 py-6 flex items-center justify-center gap-2"
+            >
+              <Workflow size={20} />
+              Ver Fluxos
+            </Button>
+          </div>
         </div>
       </section>
 
