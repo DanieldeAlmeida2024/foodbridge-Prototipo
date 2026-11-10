@@ -1,3 +1,30 @@
+# foodbridge-Prototipo
+
+Protótipo de experiência de usuário do FoodBridge para doadores e organizações.
+
+## Tecnologias
+React, TypeScript e Node.js.
+
+## Executar e validar
+```text
+npm install && npm run dev
+```
+
+**Conferência:** npm run build. A disponibilidade de integrações externas não foi validada por esta alteração.
+
+## Onde começar a leitura
+client, server, package.json.
+
+## Limitações
+Trata-se de protótipo UX; telas e dados simulados não representam API completa ou doações reais.
+
+## Documentação
+[Requisitos](docs/REQUISITOS.md) | [Arquitetura](docs/ARQUITETURA.md) | [Diagrama UML](docs/UML.puml) | [Testes](docs/PLANO_TESTES.md) | [Instruções para IA](AGENTS.md).
+
+---
+
+## Conteúdo anterior preservado
+
 # 🍽️ FoodBridge — Plataforma de Redistribuição de Alimentos
 
 > Uma plataforma open source que conecta doadores de alimentos excedentes com organizações sociais, transformando desperdício alimentar em refeições para pessoas em situação de vulnerabilidade.

@@ -1,0 +1,10 @@
+@startuml
+title foodbridge-Prototipo - mapa conceitual
+actor Usuario
+component Interface
+component Componentes
+component Integracoes
+Usuario --> Interface
+Interface --> Componentes
+Componentes --> Integracoes
+@enduml
