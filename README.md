@@ -346,3 +346,7 @@ A FoodBridge é um projeto de responsabilidade social. Nosso compromisso é:
 [⭐ Star no GitHub](https://github.com/foodbridge/foodbridge) · [📖 Documentação](./docs)
 
 </div>
+
+## Documentação individual (v1.0.0)
+
+[Projeto](docs/projeto/ESPECIFICACAO.md) · [UML](docs/uml/README.md) · [Testes](docs/testes/PLANO_DE_TESTES.md) · [Versões](docs/controle/VERSIONAMENTO.md)

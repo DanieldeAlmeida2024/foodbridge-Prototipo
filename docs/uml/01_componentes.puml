@@ -1,0 +1,20 @@
+@startuml
+actor Visitante
+component "React / wouter" as Router
+component "Home/Login/Register" as Public
+component "PublishDonationModal" as Publish
+component "ClaimDonationModal" as Claim
+component "Map/Explore" as Map
+component "Volunteers/Pickups/Impact" as Ops
+node "Express estático" as Express
+Visitante --> Express
+Express --> Router : index.html
+Router --> Public
+Router --> Publish
+Router --> Claim
+Router --> Map
+Router --> Ops
+note bottom
+Protótipo UX; sem API CRUD no Express.
+end note
+@enduml

@@ -1,0 +1,17 @@
+@startuml
+actor "Organização doadora" as Donor
+actor ONG
+participant "PublishDonationModal" as Publish
+participant "DonationCard" as Card
+participant "ClaimDonationModal" as Claim
+Donor -> Publish : preencher doação/lote
+Publish --> Card : dados ilustrativos de doação
+ONG -> Card : escolher doação
+Card -> Claim : abrir modal de solicitação
+Claim -> Claim : validar limite por ONG (meta UX)
+Claim --> ONG : confirmação de interface
+note bottom
+Fluxo demonstrativo: não evidencia
+reserva transacional de estoque em API.
+end note
+@enduml
